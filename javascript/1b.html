@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Selectors Example</title>
+</head>
+
+<body>
+
+<h1 id="title">Welcome to JavaScript</h1>
+
+<p class="text">This is the first paragraph.</p>
+<p class="text">This is the second paragraph.</p>
+
+<button onclick="selectElements()">Click Me</button>
+
+<script>
+function selectElements() {
+
+    // 1. ID Selector
+    let heading = document.getElementById("title");
+    heading.style.color = "blue";
+
+    // 2. Class Selector
+    let paragraphs = document.getElementsByClassName("text");
+    for (let i = 0; i < paragraphs.length; i++) {
+        paragraphs[i].style.fontWeight = "bold";
+    }
+
+    // 3. Tag Selector
+    let allParagraphs = document.getElementsByTagName("p");
+    allParagraphs[0].innerHTML = "Paragraph changed using tag selector";
+}
+</script>
+
+</body>
+</html> 1b.

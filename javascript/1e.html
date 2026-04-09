@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Functions</title>
+</head>
+
+<body>
+
+<h2>JavaScript Function Types</h2>
+
+<button onclick="greet()">Declaration</button>
+<button onclick="showSum()">Expression</button>
+<button onclick="showMultiply()">Arrow</button>
+
+<p id="output"></p>
+
+<script>
+    // Function Declaration
+    function greet(){
+        document.getElementById("output").innerHTML = "Hello Alice";
+    }
+
+    // Function Expression (using arrow for add)
+    const add = (a, b) => a + b;
+
+    function showSum(){
+        document.getElementById("output").innerHTML = "Sum: " + add(5, 3);
+    }
+
+    // Arrow Function
+    const multiply = (x, y) => x * y;
+
+    function showMultiply(){
+        document.getElementById("output").innerHTML = "Multiplication: " + multiply(4, 2);
+    }
+</script>
+
+</body>
+</html>. 1e
